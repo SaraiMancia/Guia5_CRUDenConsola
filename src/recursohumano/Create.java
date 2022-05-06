@@ -23,7 +23,7 @@ public class Create {
        String valoresCampos = "´" + person.getNomPersona() + "´,´" + person.getEmailPersona() + "´,´"+ person.getTelPersona() + "´,´";
        
        //Instancia u objeto de la clase conexionCrud
-       Conexion_CRUD utilerias = new Conexion_CRUD();
+       ConexionCRUD utilerias = new ConexionCRUD();
        //Se envian los parametros necesarios para guardar el registro al metodo guardarRegistros
        utilerias.guardarRegistros(tabla, camposTabla, valoresCampos);
        
