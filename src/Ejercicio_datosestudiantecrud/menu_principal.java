@@ -1,4 +1,4 @@
-package datosestudiantecrud;
+package Ejercicio_datosestudiantecrud;
 
 import java.sql.SQLException;
 import java.util.Scanner;
