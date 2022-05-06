@@ -33,7 +33,7 @@ public class ConexionCRUD {
     public void guardarRegistros(String tabla, String camposTabla, String valoresCampos){
         //Cargar la conexion
         
-        Conexion_CRUD conectar = new Conexion_CRUD();
+        ConexionCRUD conectar = new ConexionCRUD();
         Connection cone = conectar.getConnection();
         try{
             
@@ -57,7 +57,7 @@ public class ConexionCRUD {
     public void actualizarEliminarRegistro(String tabla, String valoresCamposNuevos, String condicion){
         //Carga la conexion
         
-        Conexion_CRUD conectar = new Conexion_CRUD();
+        ConexionCRUD conectar = new ConexionCRUD();
         Connection cone = conectar.getConnection();
         
         try{
@@ -83,7 +83,7 @@ public class ConexionCRUD {
     public void desplegarRegistros(String tablaBuscar, String camposBuscar, String condicionBuscar) throws SQLException{
         
         //Cargar la conexion
-        Conexion_CRUD conectar = new Conexion_CRUD();
+        ConexionCRUD conectar = new ConexionCRUD();
         Connection cone = conectar.getConnection();
         
         try {
