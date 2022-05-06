@@ -9,7 +9,7 @@ public class Update {
  Update () throws SQLException {
    Scanner leer = new Scanner (System.in);
    Persona person = new Persona ();
-   Conexion_CRUD utilerias = new Conexion_CRUD();
+   ConexionCRUD utilerias = new ConexionCRUD();
    System.out.println ("<<ACTUALIZAR REGISRTROS>>");
    
    System.out.println("Ingresar id del registro a modificar");
