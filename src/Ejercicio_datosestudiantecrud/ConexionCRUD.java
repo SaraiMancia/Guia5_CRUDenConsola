@@ -1,4 +1,4 @@
-package Ejercicio_datosestudiantecrud;
+package datosestudiantecrud;
 
 import java.sql.*;
 
@@ -52,9 +52,9 @@ public void actualizarEliminarRegistro(String tabla, String valoresCamposNuevos,
         String sqlQueryStmt;
         
         if(valoresCamposNuevos.isEmpty()){
-            sqlQueryStmt = "DELETE FROM" +tabla + "WHERE" + condicion + ";";
+            sqlQueryStmt = "DELETE FROM " +tabla + " WHERE " + condicion + ";";
         }else{
-            sqlQueryStmt = "UPDATE" + tabla + "SET" + valoresCamposNuevos + "WHERE" + condicion + ";";
+            sqlQueryStmt = "UPDATE " + tabla + " SET " + valoresCamposNuevos + " WHERE " + condicion + ";";
         }
         stmt = cone.createStatement();
         stmt.executeUpdate(sqlQueryStmt);
@@ -73,9 +73,9 @@ public void actualizarEliminarRegistro(String tabla, String valoresCamposNuevos,
             Statement stmt;
             String sqlQueryStmt;
             if(condicionBuscar.equals("")){
-                sqlQueryStmt = "SELECT" + camposBuscar + "FROM" + tablaBuscar +";";
+                sqlQueryStmt = " SELECT " + camposBuscar + " FROM " + tablaBuscar +";";
             }else{
-                sqlQueryStmt = "SELECT" + camposBuscar + "FROM" + tablaBuscar + "WHERE" + condicionBuscar;
+                sqlQueryStmt = " SELECT " + camposBuscar + " FROM " + tablaBuscar + " WHERE " + condicionBuscar;
             }
             
             stmt = cone.createStatement();
@@ -114,4 +114,5 @@ public void actualizarEliminarRegistro(String tabla, String valoresCamposNuevos,
     }
 
 }
+
 
